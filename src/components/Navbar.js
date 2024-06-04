@@ -5,7 +5,7 @@ import HomeIcon from '@mui/icons-material/Home';
 
 const Navbar = () => {
   return (
-    <AppBar position="static">
+    <AppBar position="static" color="primary">
       <Container>
         <Toolbar>
           <IconButton edge="start" color="inherit" aria-label="home" component={Link} to="/">

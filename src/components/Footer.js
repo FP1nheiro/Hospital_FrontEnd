@@ -15,7 +15,7 @@ const Footer = () => {
       <Container maxWidth="sm">
         <Typography variant="body1">Sistema de Chamada de Pacientes.</Typography>
         <Typography variant="body2" color="textSecondary">
-          © 2024 Hospital Municipal. Todos os direitos reservados.
+          © 2024 Sua Empresa. Todos os direitos reservados.
         </Typography>
       </Container>
     </Box>
