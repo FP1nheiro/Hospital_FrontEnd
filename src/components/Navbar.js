@@ -1,12 +1,16 @@
 import React from 'react';
-import { AppBar, Toolbar, Typography, Button, Container } from '@mui/material';
+import { AppBar, Toolbar, Typography, Button, Container, IconButton } from '@mui/material';
 import { Link } from 'react-router-dom';
+import HomeIcon from '@mui/icons-material/Home';
 
 const Navbar = () => {
   return (
     <AppBar position="static">
       <Container>
         <Toolbar>
+          <IconButton edge="start" color="inherit" aria-label="home" component={Link} to="/">
+            <HomeIcon />
+          </IconButton>
           <Typography variant="h6" style={{ flexGrow: 1 }}>
             Sistema de Chamada de Pacientes
           </Typography>

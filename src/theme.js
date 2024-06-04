@@ -1,4 +1,5 @@
 import { createTheme } from '@mui/material/styles';
+import { ptBR } from '@mui/material/locale';
 
 const theme = createTheme({
   palette: {
@@ -10,6 +11,11 @@ const theme = createTheme({
     },
     background: {
       default: '#f4f6f8',
+      paper: '#ffffff',
+    },
+    text: {
+      primary: '#333333',
+      secondary: '#555555',
     },
   },
   typography: {
@@ -37,7 +43,7 @@ const theme = createTheme({
   },
   spacing: 8,
   shape: {
-    borderRadius: 8,
+    borderRadius: 12,
   },
   components: {
     MuiButton: {
@@ -47,7 +53,14 @@ const theme = createTheme({
         },
       },
     },
+    MuiCard: {
+      styleOverrides: {
+        root: {
+          boxShadow: '0 3px 5px 2px rgba(105, 135, 255, .3)',
+        },
+      },
+    },
   },
-});
+}, ptBR);
 
 export default theme;

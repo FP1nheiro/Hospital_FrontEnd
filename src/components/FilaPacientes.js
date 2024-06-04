@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { obterFila, chamarPaciente, atualizarPrioridade } from '../services/api';
-import { Card, CardContent, CardActions, Typography, Button, IconButton, Select, MenuItem, Grid, Container } from '@mui/material';
+import { Card, CardContent, CardActions, Typography, Button, IconButton, Select, MenuItem, Grid, Container, Box } from '@mui/material';
 import EditIcon from '@mui/icons-material/Edit';
 import DoneIcon from '@mui/icons-material/Done';
-import { useNavigate } from 'react-router-dom';
 import webSocketService from '../services/websocket';
+import { useNavigate } from 'react-router-dom';
 
 const FilaPacientes = () => {
   const [fila, setFila] = useState([]);
